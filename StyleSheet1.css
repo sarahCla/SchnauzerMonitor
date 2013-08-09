@@ -1,0 +1,37 @@
+﻿ //    try
+            //    {
+            //        Thread t = new Thread(new ThreadStart(delegate()
+            //        {
+            //            while (true)
+            //            {
+            //                socketClient = socketServer.Accept();
+            //                Thread thread = new Thread(new ThreadStart(delegate()
+            //                {
+            //                    Socket tempSocket = socketClient;       //线程中使用
+
+            //                    try
+            //                    {
+            //                        byte[] buff = new byte[100];
+            //                        tempSocket.Receive(buff);
+            //                        BeginReceiveAfterDeal(buff);
+            //                    }
+            //                    finally
+            //                    {
+            //                        Thread.CurrentThread.Abort();
+            //                    }
+            //                }));
+            //                thread.Start();
+            //            }
+            //        }));
+
+            //        t.Start();
+            //    }
+            //    catch (ObjectDisposedException) { }
+            //    catch (Exception ex)
+            //    {
+            //        throw ex;
+            //    }
+            //}
+            //catch (SocketException ex)
+            //{
+            //    throw ex;
